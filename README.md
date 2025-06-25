@@ -57,6 +57,6 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 ##  Change that I've done
 
-- **font:** JetBrains Mono _(no nerd)_
-- **cursor shape:** using underline _( _ )_
-- **bordersize(pixel):** using 4 _(instead of 2)_
+- font
+- cursor shape
+- bordersize(pixel)
