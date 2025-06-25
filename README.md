@@ -25,15 +25,18 @@ famous because of its simplicity and weightlessness.
 First things first, here are some requeriments:
 
 - `pkg-config`
+- `JetBrains Mono Font`
 - `xorg-libs`
 
 > [!NOTE]
 >
-> The `xorg-libs` is a bunch of graphical libraries (_Xinerama_,
-> _Xlib_, _..._) to run Xorg-based programs. You'll need to install
-> the `pkg-config` by your own *package manager**. But the
+> The `xorg-libs` is a bunch of graphical/event libraries
+> (_Xinerama_, _Xlib_, _..._) to run Xorg-based programs. You'll need
+> to install the `pkg-config` by your own *package manager**, but the
 > `xorg-libs` will be listed at my personal
-> [dwm config repository](https://github.com/nasccped/dwm.conf).
+> [dwm config repository](https://github.com/nasccped/dwm.conf). The
+> JetBrains Mono font can be downloaded from the
+> [original sources](https://www.jetbrains.com/lp/mono/).
 
 Follow these steps...
 
