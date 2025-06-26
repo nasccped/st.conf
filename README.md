@@ -37,6 +37,11 @@ First things first, here are some requeriments:
 > [dwm config repository](https://github.com/nasccped/dwm.conf). The
 > JetBrains Mono font can be downloaded from the
 > [original sources](https://www.jetbrains.com/lp/mono/).
+>
+> ---
+>
+> I will not talk about the obvious one such as the `C compiler` and
+> `git`.
 
 Follow these steps...
 
