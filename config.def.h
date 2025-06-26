@@ -194,15 +194,33 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
+/*
+ * WARN: Here are some changes that I've made. you can change it too! I'll
+ *       mark them. Follow the 'NOTE' comments. (It work the same as  Windows
+ *       PowerShell)
+ */
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+
+	// NOTE: Zoom in ------------------------------------------------
+	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
+	{ TERMMOD,              XK_KP_Add,      zoom,           {.f = +1} },
+	{ ShiftMask,            XK_KP_Add,      zoom,           {.f = +1} },
+	{ ControlMask,          XK_KP_Add,      zoom,           {.f = +1} },
+
+	// NOTE: Zoom out -----------------------------------------------
+	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
+	{ TERMMOD,              XK_KP_Subtract, zoom,           {.f = -1} },
+	{ ShiftMask,            XK_KP_Subtract, zoom,           {.f = -1} },
+	{ ControlMask,          XK_KP_Subtract, zoom,           {.f = -1} },
+
+	// NOTE: Zoom reset ---------------------------------------------
+	{ TERMMOD,              XK_parenright,           zoomreset,      {.f =  0} },
+
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
