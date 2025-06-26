@@ -70,6 +70,8 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 - font
 - cursor shape
 - bordersize(pixel)
+- zoom in/out/reset (manual changes at `config.def.h`, check the
+  **Extra** section)
 
 ### patches
 
@@ -93,3 +95,27 @@ I've setted my `st` border pixel to 4. After using `anysize` patch,
 the terminal background color escaping (i.e., neovim) was looking
 wrong (about border dimension). Setting boderpixel to a bigger value
 can solve this problem!
+
+### Zoom shortcuts
+
+Like other terminal emulators, `Ctrl` | `Shift` with the _plus_ or
+_minus_ sign can increase or decrease the font dimension rendering
+(zoom in/out). I came from **WindowsPowershell** and **Alacritty**.
+This change is very helpfull for common workflows. Here are my
+changes:
+
+> [!TIP]
+>
+> Consider:
+>
+>   - `TERMMOD` as `Shift` + `Ctrl` (at the same time)
+>   - `MULTMOD` as `Shift` and/or `Ctrl` (separate or not)
+
+1. Zoom in:
+    - `TERMMOD` + `=` (`+` sign at up _when pressing Shift_)
+    - `MULTMOD` + `+` (from numeric keyboard)
+2. Zoom out:
+    - `TERMMOD` + `-`
+    - `MULTMOD` + `-` (from numeric keyboard)
+3. Zoom reset:
+    - `TERMMOD` + `0` (not numeric keyboard)
