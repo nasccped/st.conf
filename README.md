@@ -58,7 +58,7 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 4. Congrats. You now have the **st** program 🎉🎉🎉
 
-##  Change that I've done
+## Changes that I've done (or patches added)
 
 - font
 - cursor shape
