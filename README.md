@@ -86,3 +86,10 @@ I've defined my mouse cursor as blinking underline both in `st` and
 in `bash PS1`. You can set these values as you want by modifying the
 `config.def.h` file (before make building or just `config.h` after
 make building).
+
+### Border pixel
+
+I've setted my `st` border pixel to 4. After using `anysize` patch,
+the terminal background color escaping (i.e., neovim) was looking
+wrong (about border dimension). Setting boderpixel to a bigger value
+can solve this problem!
