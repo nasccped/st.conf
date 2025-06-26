@@ -65,7 +65,7 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 ## Changes that I've done (or patches added)
 
-### config.def.h
+### manual changes
 
 - font
 - cursor shape
