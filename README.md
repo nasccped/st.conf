@@ -75,3 +75,14 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 - [anysize](https://st.suckless.org/patches/anysize/)
 - [blinking cursor](https://st.suckless.org/patches/blinking_cursor/)
+
+## Extra
+
+Extra info about my config!
+
+### Cursor style
+
+I've defined my mouse cursor as blinking underline both in `st` and
+in `bash PS1`. You can set these values as you want by modifying the
+`config.def.h` file (before make building or just `config.h` after
+make building).
