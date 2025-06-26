@@ -60,6 +60,13 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 ## Changes that I've done (or patches added)
 
+### config.def.h
+
 - font
 - cursor shape
 - bordersize(pixel)
+
+### patches
+
+- [anysize](https://st.suckless.org/patches/anysize/)
+- [blinking cursor](https://st.suckless.org/patches/blinking_cursor/)
