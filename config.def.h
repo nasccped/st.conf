@@ -207,19 +207,15 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 
 	// NOTE: Zoom in ------------------------------------------------
-	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
-	{ TERMMOD,              XK_KP_Add,      zoom,           {.f = +1} },
-	{ ShiftMask,            XK_KP_Add,      zoom,           {.f = +1} },
+	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
 	{ ControlMask,          XK_KP_Add,      zoom,           {.f = +1} },
 
 	// NOTE: Zoom out -----------------------------------------------
-	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
-	{ TERMMOD,              XK_KP_Subtract, zoom,           {.f = -1} },
-	{ ShiftMask,            XK_KP_Subtract, zoom,           {.f = -1} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
 	{ ControlMask,          XK_KP_Subtract, zoom,           {.f = -1} },
 
 	// NOTE: Zoom reset ---------------------------------------------
-	{ TERMMOD,              XK_parenright,           zoomreset,      {.f =  0} },
+	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
 
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
