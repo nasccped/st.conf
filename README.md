@@ -25,7 +25,7 @@ famous because of its simplicity and weightlessness.
 First things first, here are some requeriments:
 
 - `pkg-config`
-- `JetBrains Mono Font`
+- `Iosevka font`
 - `xorg-libs`
 
 > [!NOTE]
@@ -35,8 +35,8 @@ First things first, here are some requeriments:
 > to install the `pkg-config` by your own *package manager**, but the
 > `xorg-libs` will be listed at my personal
 > [dwm config repository](https://github.com/nasccped/dwm.conf). The
-> JetBrains Mono font can be downloaded from the
-> [original sources](https://www.jetbrains.com/lp/mono/).
+> Iosevka font can be downloaded from the
+> [Iosevka official repository](https://github.com/be5invis/Iosevka).
 >
 > ---
 >
