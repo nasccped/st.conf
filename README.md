@@ -104,18 +104,11 @@ _minus_ sign can increase or decrease the font dimension rendering
 This change is very helpfull for common workflows. Here are my
 changes:
 
-> [!TIP]
->
-> Consider:
->
->   - `TERMMOD` as `Shift` + `Ctrl` (at the same time)
->   - `MULTMOD` as `Shift` and/or `Ctrl` (separate or not)
-
 1. Zoom in:
-    - `TERMMOD` + `=` (`+` sign at up _when pressing Shift_)
-    - `MULTMOD` + `+` (from numeric keyboard)
+    - `Ctrl` + `=` (non numeric keyboard)
+    - `Ctrl` + `+` (from numeric keyboard)
 2. Zoom out:
-    - `TERMMOD` + `-`
-    - `MULTMOD` + `-` (from numeric keyboard)
+    - `Ctrl` + `-` (non numeric keyboard)
+    - `Ctrl` + `-` (from numeric keyboard)
 3. Zoom reset:
-    - `TERMMOD` + `0` (not numeric keyboard)
+    - `Ctrl` + `0` (not numeric keyboard)
