@@ -79,6 +79,8 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 - [anysize](https://st.suckless.org/patches/anysize/)
 - [blinking cursor](https://st.suckless.org/patches/blinking_cursor/)
+- [boxdraw](https://st.suckless.org/patches/boxdraw/)
+  _(read [Boxdraw patch](#boxdraw-patch))_
 
 ## Extra
 
@@ -114,3 +116,24 @@ changes:
     - `Ctrl` + `-` (from numeric keyboard)
 3. Zoom reset:
     - `Ctrl` + `0` (not numeric keyboard)
+
+### Boxdraw patch
+
+Boxdraw is a patch for st that can fix the
+[box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters)
+display _(making more precise and font-independent)_. It's added to
+the program by a patch but will only be enabled if the
+**config.def.h** variable is true:
+
+```c
+/* Set this value to 0 to disable boxdraw feature */
+const int boxdraw = 1;
+```
+
+Also, boxdraw characters can sometimes be bold and it can broke the
+boxdraw feature, so I've disabled it: (also **config.def.h**)
+
+```c
+/* Set this value to 1 to enable boxdraw feature on bold */
+const int boxdraw_bold = 0;
+```
