@@ -73,6 +73,7 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 - zoom in/out/reset (manual changes at `config.def.h`, check the
   **Extra** section)
 - tabspaces (from 8 to 4)
+- colors (using `#define` at **config.def.h**)
 
 ### patches
 
