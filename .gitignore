@@ -3,3 +3,4 @@ st.o
 x.o
 **/*.diff
 config.h
+**/*.orig
