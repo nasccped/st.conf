@@ -103,7 +103,7 @@ unsigned int tabspaces = 4;
 #define COLOR_CYAN_NORMAL	"#1dc0cc"
 #define COLOR_WHITE_NORMAL	"#dddddd"
 /* define colors - bright */
-#define COLOR_BLACK_BRIGHT	"#13151c"
+#define COLOR_BLACK_BRIGHT	"#777880"
 #define COLOR_RED_BRIGHT	"#e35b5b"
 #define COLOR_GREEN_BRIGHT	"#56db6a"
 #define COLOR_YELLOW_BRIGHT	"#e3b856"
