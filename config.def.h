@@ -93,35 +93,46 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 4;
 
+/* define colors - normal */
+#define COLOR_BLACK_NORMAL	"#06070a"
+#define COLOR_RED_NORMAL	"#c94040"
+#define COLOR_GREEN_NORMAL	"#30c746"
+#define COLOR_YELLOW_NORMAL	"#d4a435"
+#define COLOR_BLUE_NORMAL	"#326cd9"
+#define COLOR_MAGENTA_NORMAL	"#c92891"
+#define COLOR_CYAN_NORMAL	"#1dc0cc"
+#define COLOR_WHITE_NORMAL	"#dddddd"
+/* define colors - bright */
+#define COLOR_BLACK_BRIGHT	"#13151c"
+#define COLOR_RED_BRIGHT	"#e35b5b"
+#define COLOR_GREEN_BRIGHT	"#56db6a"
+#define COLOR_YELLOW_BRIGHT	"#e3b856"
+#define COLOR_BLUE_BRIGHT	"#5183e0"
+#define COLOR_MAGENTA_BRIGHT	"#eb73c1"
+#define COLOR_CYAN_BRIGHT	"#8ee2e8"
+#define COLOR_WHITE_BRIGHT	"#ffffff"
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	[0] = COLOR_BLACK_NORMAL  , /* black   */
+	[1] = COLOR_RED_NORMAL    , /* red     */
+	[2] = COLOR_GREEN_NORMAL  , /* green   */
+	[3] = COLOR_YELLOW_NORMAL , /* yellow  */
+	[4] = COLOR_BLUE_NORMAL   , /* blue    */
+	[5] = COLOR_MAGENTA_NORMAL, /* magenta */
+	[6] = COLOR_CYAN_NORMAL   , /* cyan    */
+	[7] = COLOR_WHITE_NORMAL  , /* white   */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	[8] = COLOR_BLACK_BRIGHT  , /* black   */
+	[9] = COLOR_RED_BRIGHT    , /* red     */
+	[10] = COLOR_GREEN_BRIGHT  , /* green   */
+	[11] = COLOR_YELLOW_BRIGHT , /* yellow  */
+	[12] = COLOR_BLUE_BRIGHT   , /* blue    */
+	[13] = COLOR_MAGENTA_BRIGHT, /* magenta */
+	[14] = COLOR_CYAN_BRIGHT   , /* cyan    */
+	[15] = COLOR_WHITE_BRIGHT  , /* white   */
 };
 
 
@@ -129,10 +140,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 7;
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
