@@ -93,6 +93,12 @@ in `bash PS1`. You can set these values as you want by modifying the
 `config.def.h` file (before make building or just `config.h` after
 make building).
 
+I've also applied the [unfocused cursor patch]. It's applied by
+commenting a `XftDrawRect` function at `x.c` file _(within the
+xdrawcursor function)_.
+
+[unfocused cursor patch]: https://st.suckless.org/patches/unfocused_cursor/
+
 ### Border pixel
 
 I've setted my `st` border pixel to 4. After using `anysize` patch,
