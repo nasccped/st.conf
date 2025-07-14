@@ -12,13 +12,17 @@ My personal configurations for ST (Suckless Terminal) program 💻
 
 ## What's the Suckless Terminal?
 
-The [Suckless Terminal](https://st.suckless.org/) (aka **st**) is a
-terminal emulator developed by the
-[suckless.org community](https://suckless.org/).
+The [Suckless Terminal] (aka **st**) is a terminal emulator developed
+by the [suckless.org community].
 
-It works the same as [Alacritty](https://alacritty.org/),
-[Kitty](https://sw.kovidgoyal.net/kitty/) and many others, but it's
+[Suckless Terminal]: https://st.suckless.org/
+[suckless.org community]: https://suckless.org/
+
+It works the same as [Alacritty], [Kitty] and many others, but it's
 famous because of its simplicity and weightlessness.
+
+[Alacritty]: https://alacritty.org/
+[Kitty]: https://sw.kovidgoyal.net/kitty/
 
 ## Get the program
 
@@ -33,15 +37,17 @@ First things first, here are some requeriments:
 > The `xorg-libs` is a bunch of graphical/event libraries
 > (_Xinerama_, _Xlib_, _..._) to run Xorg-based programs. You'll need
 > to install the `pkg-config` by your own *package manager**, but the
-> `xorg-libs` will be listed at my personal
-> [dwm config repository](https://github.com/nasccped/dwm.conf). The
-> Iosevka font can be downloaded from the
-> [Iosevka official repository](https://github.com/be5invis/Iosevka).
+> `xorg-libs` will be listed at my personal [dwm config repository].
+> The Iosevka font can be downloaded from the
+> [Iosevka official repository].
 >
 > ---
 >
 > I will not talk about the obvious one such as the `C compiler` and
 > `git`.
+
+[dwm config repository]: https://github.com/nasccped/dwm.conf
+[Iosevka official repository]: https://github.com/be5invis/Iosevka
 
 Follow these steps...
 
@@ -77,10 +83,14 @@ make clean && sudo make install # you'll need to be sudo + enter your pass
 
 ### patches
 
-- [anysize](https://st.suckless.org/patches/anysize/)
-- [blinking cursor](https://st.suckless.org/patches/blinking_cursor/)
-- [boxdraw](https://st.suckless.org/patches/boxdraw/)
-  _(read [Boxdraw patch](#boxdraw-patch))_
+- [anysize]
+- [blinking cursor]
+- [boxdraw] _(read [Boxdraw patch])_
+
+[anysize]: https://st.suckless.org/patches/anysize/
+[blinking cursor]: https://st.suckless.org/patches/blinking_cursor/
+[boxdraw]: https://st.suckless.org/patches/boxdraw/
+[Boxdraw patch]: #boxdraw-patch
 
 ## Extra
 
@@ -126,10 +136,11 @@ changes:
 ### Boxdraw patch
 
 Boxdraw is a patch for st that can fix the
-[box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters)
-display _(making more precise and font-independent)_. It's added to
-the program by a patch but will only be enabled if the
-**config.def.h** variable is true:
+[box-drawing characters] display _(making more precise and
+font-independent)_. It's added to the program by a patch but will
+only be enabled if the **config.def.h** variable is true:
+
+[box-drawing characters]: https://en.wikipedia.org/wiki/Box-drawing_characters
 
 ```c
 /* Set this value to 0 to disable boxdraw feature */
