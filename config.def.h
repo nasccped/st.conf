@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Fixed:style=Bold Extended:pixelsize=15:antialias=true:autohint=true";
+// static char *font = "Iosevka Term:style=Bold Extended:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrainsMonoNL Nerd Font Mono:style=Bold:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
@@ -153,7 +154,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
+unsigned int defaultbg = 233;
 unsigned int defaultcs = 7;
 static unsigned int defaultrcs = 7;
 
